@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./css/styles-livro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Livros </title>
+</head>
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img  style="width: 80px;" src="/./images/icons8-livros-100.png"> WaysBooks</p>]
+    </header>
+
+<body style="background: rgb(182, 123, 238);">
+    <div class="container p-5">
+        <div class="card shadow-lg rounded p-3">
+            <div class="row">
+                <div class="col-2">
+
+                    <a href="/livros" class="rounded-pill shadow p-2 d-flex align-items-center justify-content-center"
+                        style="text-decoration:none;">
+                        <i class="material-icons mr-2" style="color:black">arrow_left
+                        </i> <span class="" style="color:black">Livros</span>
+                    </a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title" class="text-white">Título</label>
+                <input type="text" class="form-control" disabled placeholder="Título" name="title" value="<%= livro.title %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="author" class="text-white">Autor(a)</label>
+                <input type="text" class="form-control" disabled placeholder="Autor(a)" name="author" value="<%= livro.author %>"
+                    required>
+            </div>
+             
+            <div class="form-group">
+
+                <label for="year" class="text-white">Ano</label>
+                <input type="text" class="form-control" disabled placeholder="Ano" name="year" value="<%= livro.year %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="editora" class="text-white">Editora</label>
+                <input type="text" class="form-control" disabled placeholder="Editora" name="editora" value="<%= livro.editora %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="kindof" class="text-white">Gênero</label>
+                <input type="text" class="form-control" disabled placeholder="Gênero" name="kindof" value="<%= livro.kindof %>"
+                    required>
+            </div>
+            
+            <div class="form-group">
+          
+        </div>
+
+
+    </div>
+    <div id="espaco"></div>
+
+   
+    <footer style="height: 60px; text-align: center;">
+        Copyright 2021 - todos os direitos reservados para WaysBooks
+      </footer>
+</body>
+
+</html>

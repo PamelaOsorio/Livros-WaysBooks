@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/./css/styles-leitor.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <header id="cabecalho" alt="cabecalho"style="width: auto;">
+        <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img style="width: 80px;" src="/./images/icons8-livros-100.png">WaysBooks</p>
+              <nav>
+              <ul>
+                </ul>
+                </nav>
+                <li> 
+                   
+    </header>
+    
+    <div class="alert alert-danger" role="alert">
+         Preencha o campo de cadastro abaixo 
+     </div>
+        </button>
+      </div>
+    <body style="background: rgb(184, 137, 196);">
+        <div class="container">
+            
+           <!-- <h1 class="mb-4 text-black" style="margin: 0%;">Novo Cadastro</h1>-->
+    
+            <form action="/emprestimos" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+     <form>
+        
+        <div class="form-row">
+            <div class="col-md-2 offset-md-0">
+                <label for="Data_emprestimo" class="text-black">Data do Empréstimo</label>
+                <input type="date" class="form-control"  name="Data_emprestimo"  required>
+
+     
+            </div>
+            <div class="col-md-2 offset-md-0">
+                <label for="Data_devolucao" class="text-black">Data do Devolução</label>
+                <input type="date" class="form-control"  name="Data_devolucao"  required>
+
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 offset-md-0">
+                <label for="name" class="text-black">Nome</label>
+                <input type="text" class="form-control" placeholder="Nome" name="name" required>
+            </div>
+            <div class="col-md-5 offset-md-0">
+                <label for="surname" class="text-black">Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome" name="surname" required>
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 offset-md-0">
+                    <label for="title" class="text-black">Título</label>
+                    <input type="text" class="form-control" placeholder="Título" name="title" required>
+                </div>
+                <div class="col-md-5 offset-md-0">
+                    <label for="author" class="text-black">Autor(a)</label>
+                    <input type="text" class="form-control" placeholder="Autor(a)" name="author" required>
+                </div>
+            </div>
+        </div>
+        <form>
+           <div class="form-row">
+               <div class="col-md-2 offset-md-0">
+                <label for="tel" class="text-black">Telefone</label>
+                <input type="text" class="form-control" placeholder="Telefone" name="tel" required>
+               </div>
+               <div class="col-md-4 offset-md-0">
+                <label for="email" class="text-black">E-mail</label>
+                <input type="text" class="form-control" placeholder="E-mail" name="email" required>
+
+               </div>
+           </div>
+          
+          
+        <!--terceira linha-->
+        <br>
+        
+            <button type="submit" class="btn btn-outline-danger">Salvar</button>
+        <!-- quarta linha-->
+        <br>
+    </form>
+    <br>
+    <br>
+    
+</div>
+<div id="espaco"></div>
+<footer style="height: 60px; text-align: center;">
+    Copyright 2021 - todos os direitos reservados para WaysBooks
+  </footer>
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

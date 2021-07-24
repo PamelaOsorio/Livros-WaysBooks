@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./css/styles-livro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script>tinymce.init({ selector: 'textarea' });</script>-->
+    <title>Edite</title>
+</head>
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img src="/./images/icons8-livros-100.png"> WaysBooks</p>
+</header>
+
+<body style="background: rgb(182, 123, 238);">
+
+    <div class="container">
+        <h1 class="mb-4 text-black">Livro: <%= livro.title %> </h1>
+
+        <form action="/livros/<%= livro.id %>?_method=PUT" method="POST">
+            <div class="form-group">
+
+                <label for="title" class="text-black">Título</label>
+                <input type="text" class="form-control" placeholder="Título" name="title" value="<%= livro.title %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="author" class="text-black">Autor(a)</label>
+                <input type="text" class="form-control" placeholder="Autor(a)" name="author" value="<%= livro.author %>"
+                    required>
+            </div>
+             
+            <div class="form-group">
+
+                <label for="year" class="text-black">Ano</label>
+                <input type="text" class="form-control" placeholder="Ano" name="year" value="<%= livro.year %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="editora" class="text-black">Editora</label>
+                <input type="text" class="form-control" placeholder="Editora" name="editora" value="<%= livro.editora %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="kindof" class="text-black">Gênero</label>
+                <input type="text" class="form-control" placeholder="Gênero" name="kindof" value="<%= livro.kindof %>"
+                    required>
+            </div>
+            
+            <div class="form-group">
+                <a href="livros" class="btn btn-warning">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="espaco"></div>
+    <footer style="height: 60px; text-align: center;">
+        Copyright 2021 - todos os direitos reservados para WaysBooks
+      </footer>
+</body>
+
+</html>

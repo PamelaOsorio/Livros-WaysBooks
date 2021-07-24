@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./css/styles-livro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script>tinymce.init({ selector: 'textarea' });</script>-->
+    <title>Edite</title>
+</head>
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img style="width: 80px;" src="/./images/icons8-livros-100.png"> WaysBooks</p>
+</header>
+
+<body style="background: rgb(182, 123, 238);">
+
+    <div class="container">
+        <h1 class="mb-4 text-black">Empréstimo: <%= emprestimo.Data_emprestimo %> </h1>
+
+        <form action="/emprestimos/<%=emprestimo.id %>?_method=PUT" method="POST">
+            <div class="form-group">
+            <div class="col-md-3 offset-md-0">
+                <label for="Data_emprestimo" class="text-white">Data de Empréstimo</label>
+                <input type="date" class="form-control"  name="Data_emprestimo" value="<%= emprestimo.Data_emprestimo %>"
+                required>
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3 offset-md-0">
+            <label for="Data_devolucao" class="text-white">Data de Devolução</label>
+            <input type="date" class="form-control"  name="Data_devolucao" value="<%= emprestimo.Data_devolucao %>"
+            required>
+    </div>
+</div>
+            <div class="form-group">
+                <div class="col-md-4 offset-md-0">
+                <label for="name" class="text-white">Nome</label>
+                <input type="text" class="form-control" placeholder="Nome" name="name" value="<%= emprestimo.name %>"
+                    required>
+            </div>
+        </div>
+
+            <div class="form-group">
+
+                <label for="surname" class="text-white">Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome" name="surname" value="<%= emprestimo.surname %>"
+                    required>
+            </div>
+            <div class="form-group">
+
+                <label for="title" class="text-black">Título</label>
+                <input type="text" class="form-control" placeholder="Título" name="title" value="<%= emprestimo.title %>"
+                    required>
+            </div>
+
+            <div class="form-group">
+
+                <label for="author" class="text-black">Autor(a)</label>
+                <input type="text" class="form-control" placeholder="Autor(a)" name="author" value="<%= emprestimo.author %>"
+                    required>
+            </div>
+            <div class="form-group">
+            <label for="tel" class="text-black">Telefone</label>
+            <input type="text" class="form-control" placeholder="Telefone" name="tel" value="<%= emprestimo.tel %>" required>
+
+        </div> 
+       
+        <div class="form-group">
+
+            <label for="email" class="text-black">E-mail</label>
+            <input type="text" class="form-control" placeholder="E-mail" name="email" value="<%= emprestimo.email %>" required>
+
+        </div> 
+            
+            <div class="form-group">
+                <a href="emprestimos" class="btn btn-warning">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="espaco"></div>
+    <footer style="height: 60px; text-align: center;">
+        Copyright 2021 - todos os direitos reservados para WaysBooks
+      </footer>
+</body>
+
+</html>

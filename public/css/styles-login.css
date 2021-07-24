@@ -1,0 +1,43 @@
+.main-section{
+	margin: 0 auto;
+	padding: 0;
+}
+#login .model-content{
+	background-image: radial-gradient(rgb(240, 214, 214),rgb(157, 127, 228));
+	opacity: .95;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px #000000ab;
+}
+
+
+.user-img{
+	margin-bottom: 35px;
+}
+
+.user-img img {
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.form-group {
+	/*margin-bottom: 25px;*/
+        margin: 0 auto;
+        padding-top: 0%; /* Valor da Largura */
+        padding-bottom: 12px;
+        
+    
+}
+.btn{
+    width: 100px;
+    color: black,border;
+    background:rgb(224, 90, 90);
+    font-size: large;
+    box-shadow: 0px 0px 0px 0.5px #f1ececab;
+}
+#login .model-content {
+	pointer-events: all;
+}
+.show {display:block;}
+

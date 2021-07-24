@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./css/styles-leitor.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+
+</head>
+
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px;
+    "><img style="width:80px;" src="/./images/icons8-livros-100.png"> WaysBooks</p>
+    <nav>
+    <ul>
+          <li class="badge badge-primary"><a href="/principal">Menu</a></li>
+          <li class="badge badge-danger" ><a href="/livros">Livros</a></li>
+          <li class="badge badge-success"><a href="/leitores">Leitores</a></li>
+      </ul>
+      </nav>
+  </header>
+
+<body style="background:#b6a1c0;">
+   
+        <br>
+        <div class="row mb-2">
+            <a href="/leitores/leitor_new" class="btn btn-danger d-flex align-items-center"><i
+                    class="material-icons mr-2">add_circle</i>
+                Novo cadastro</a>
+        </div>
+
+        <div class="row mb-3">
+            <div class="table-responsive">
+                <table class="table table-sm text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sobrenome</th>
+                        <th scope="col">Data de Nascimento</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Rua</th>
+                        <th scope="col">Número</th>
+                        <th scope="col;">Telefone</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Ação</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+
+            <% if(leitores.length<1){%>
+
+            <p class="alert alert-primary d-flex align-items-center">Nenhum leitor foi cadastrado ainda</p>
+
+            <%  } %>
+
+
+            <% leitores.forEach(leitor=>{ %>
+
+                
+                            
+                         
+                        <tbody>
+                    <tr>
+
+                    <th scope="row"></th>
+                      <td> <%= leitor.name %> </td>
+                      <td> <%= leitor.surname %> </td>
+                      <td> <%= leitor.datanasc %> </td>
+                      <td> <%= leitor.bairro %> </td>
+                      <td> <%= leitor.rua %> </td>
+                      <td> <%= leitor.numero %> </td>
+                      <td> <%= leitor.tel %> </td>
+                      <td> <%= leitor.email %> </td>
+                      <td><!--<div class="d-none options card rounded-pill shadow-sm p-1 position-absolute">-->
+                        <a href="leitores/leitor_edit/<%= leitor.id %> " class="rounded-circle p-2 mb-2"
+                            style="background:blue;">
+                            <i class="material-icons" style="color:white">create</i>
+                        </a>
+                      </td>
+                      <td>  <form action="/leitores/<%=leitor.id%>?_method=DELETE" method="POST">
+                            <button class="rounded-circle p-2 bg-danger">
+                                <i class="material-icons" style="color:white">delete</i>
+
+                            </button>
+                        </form><!--</div--></td>
+                </tr>
+                </tbody>
+
+
+
+            <% }) %>
+            </table>
+
+            </div>
+
+
+        </div>      
+        <script src="/js/index.js"></script>
+
+
+
+<div id="espaco"></div>
+
+<footer style="height: 60px;width: auto; text-align: center;">
+    Copyright 2021 - todos os direitos reservados para WaysBooks
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+        

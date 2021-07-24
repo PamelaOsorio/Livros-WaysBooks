@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./css/styles-livro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script>tinymce.init({ selector: 'textarea' });</script>-->
+    <title>Edite</title>
+</head>
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img style="width: 80px;" src="/./images/icons8-livros-100.png"> WaysBooks</p>
+</header>
+
+<body style="background: rgb(182, 123, 238);">
+
+    <div class="container">
+        <h1 class="mb-4 text-black">Funcionario: <%= funcionario.name %> </h1>
+
+        <form action="/funcionarios/<%=funcionario.id %>?_method=PUT" method="POST">
+            <div class="form-group">
+            <div class="col-md-4 offset-md-0">
+                <label for="name" class="text-white">Nome</label>
+                <input type="text" class="form-control"  name="name" value="<%= funcionario.name %>"
+                required>
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3 offset-md-0">
+            <label for="datanasc" class="text-white">Data de Nascimento</label>
+            <input type="date" class="form-control"  name="datanasc" value="<%= funcionario.datanasc %>"
+            required>
+    </div>
+</div>
+            <div class="form-group">
+                <div class="col-md-4 offset-md-0">
+                <label for="email" class="text-white">E-mail</label>
+                <input type="text" class="form-control" placeholder="E-mail" name="email" value="<%= funcionario.email %>"
+                    required>
+            </div>
+        </div>
+</div>
+
+           
+            
+            <div class="form-group">
+                <a href="funcionarios" class="btn btn-warning">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div id="espaco"></div>
+    <footer style="height: 60px; text-align: center;">
+        Copyright 2021 - todos os direitos reservados para WaysBooks
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+body {
+    /*background:#dfcae9;*/
+    background:#b6a1c0;
+    width: auto;
+
+    
+}
+
+header {
+    border-color: rgb(53, 12, 105);
+    border-style: solid;
+    border-width: 1px;
+    /*margin:auto;*/
+    /*color: lawngreen;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    background: radial-gradient(#fac2c2,rgb(68, 21, 116));
+    height:100px;
+    overflow: hidden;
+    padding: 10px 20px;
+    /*10px;*/
+    width: 1342px;
+
+    
+
+}
+.card{
+    background: radial-gradient(#c7b9cf,rgb(63, 2, 121));
+
+}
+#espaco{
+    height: 290px;
+}
+footer{
+   
+        border-color: rgb(18, 2, 31);
+        border-style: solid;
+        border-width: 1px;
+        background: radial-gradient(#c7b9cf,rgb(63, 2, 121));
+        height: 100px;
+        
+   
+   
+}
+a{
+  float:right;
+  padding-right: 85px;
+  padding-bottom: 0px;
+}
+h1{
+    color: black;
+}
+p{
+    float: left;
+}
+/*
+*/
+ul {
+    float:right;
+    align-self: center;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+ul li{
+    position: relative;
+    float: left;
+    align-self: center;
+    align-items: baseline;
+
+
+ 
+}
+
+ul li a {
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    
+
+    
+}
+
+ul li a:hover{
+    color:rgb(4, 0, 5);
+    text-shadow: 0px 0px 10px rgb(254, 252, 255);
+    /*height: 58px;*/
+    margin-top:12px rgb(0, 0, 0) ;
+
+}
+
+ul li ul {
+    top: 90px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    margin-left: 90px;
+    
+}
+/*
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+
+}
+/*
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 110px;
+    height: 37px;
+}
+
+.menu li ul li a{
+    position: absolute;
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 110px;
+    height: 37px;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+
+    font-style: normal;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 30px;
+      color: black;
+}
+#novo{
+    color: black;
+}
+#novo-imagem{
+    width:50px;
+     height:auto
+} 
+    
+.table{
+    /*background-color: rgb(191, 161, 197);*/
+    background-color: rgb(139, 105, 146);
+    color:black
+
+}
+
+thead{
+    /*background-color: rgb(105, 85, 109);*/
+    background-color: rgb(99, 53, 126);
+    width: 100px;
+}
+
+footer{
+    text-align: center;
+    border: 2px solid  rgb(45, 33, 66);
+    background: rgb(81, 50, 112);
+    font-family:'Berkshire Swash';
+    color: rgb(0, 0, 0);
+    font-size: 22px; 
+    height: 34px;
+    width: 1342px;
+}

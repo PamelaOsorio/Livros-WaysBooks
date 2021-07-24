@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-leitor.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script>tinymce.init({ selector: 'textarea' });</script>-->
+    <title> novo leitor</title>
+</head>
+
+<header id="cabecalho" alt="cabecalho">
+    <p class="font-weight-bold" style="font-family:'Berkshire Swash'; color: rgb(0, 0, 0); font-size: 48px; border-color: tomato; border-left: 2px; "><img  style="width: 80px;" src="/./images/icons8-livros-100.png">WaysBooks</p>
+          <nav>
+          <ul>
+            </ul>
+            </nav>
+            <li> 
+           
+</header>
+<div class="alert alert-danger" role="alert">
+    Preencha o campo de cadastro abaixo 
+</div>
+<body style="background: rgb(184, 137, 196);">
+
+    <div class="container">
+
+        <form action="/leitores" method="POST" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="col-md-3 offset-md-0">
+                <label for="name" class="text-black">Nome</label>
+                <input type="text" class="form-control" placeholder="Nome" name="name" required>
+            </div>
+           
+                <div class="col-md-4 offset-md-0">
+                <label for="surname" class="text-black">Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome" name="surname" required>
+            </div>
+
+                <div class="col-md-2 offset-md-0">
+                <label for="datanasc" class="text-black">Data de Nascimento</label>
+                <input type="date" class="form-control"  name="datanasc"  required>
+
+            </div> 
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 offset-md-0">
+                <label for="bairro" class="text-black">Bairro</label>
+                <input type="text" class="form-control" placeholder="Bairro" name="bairro" required>
+            
+            </div> 
+            <div class="col-md-5 offset-md-0">
+                <label for="rua" class="text-black">Rua</label>
+                <input type="text" class="form-control" placeholder="Rua" name="rua" required>
+
+            </div> 
+        
+            <div class="col-md-2 offset-md-0">
+
+                <label for="numero" class="text-black">Número</label>
+                <input type="text" class="form-control" placeholder="Número" name="numero" required>
+
+            </div> 
+            </div>
+            <div class="form-row">
+            <div class="col-md-2 offset-md-0">
+
+                <label for="tel" class="text-black">Telefone</label>
+                <input type="text" class="form-control" placeholder="Telefone" name="tel" required>
+
+            </div> 
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 offset-md-0">
+                <label for="email" class="text-black">E-mail</label>
+                <input type="text" class="form-control" placeholder="E-mail" name="email" required>
+            </div>
+
+            </div> 
+           <br>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-danger">Salvar</button>
+                <br>
+                <br>
+            </div>
+        </form>
+    </div>
+
+    <div id="espaco"></div>
+
+
+<footer style="height: 60px;width: auto; text-align: center;">
+    Copyright 2021 - todos os direitos reservados para WaysBooks
+  </footer>
+
+</body>
+
+</html>
+
